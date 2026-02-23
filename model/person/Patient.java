@@ -1,24 +1,26 @@
 package model.person;
+
 import model.policy.Policy;
+import model.policy.Contact;
 
 public class Patient extends Person {
     private String gender;
-    private String Contact;
+    private Contact contact; 
     private Policy policy;
 
     public Patient(String name, String document, String email, String CellPhone, String birthdate, String address,
-                   String gender, String Contact, Policy policy) {
+                   String gender, Contact contact, Policy policy) {
         super(name, document, email, CellPhone, birthdate, address);
         this.gender = gender;
-        this.Contact = Contact;
+        this.contact = contact;
         this.policy = policy;
     }
 
     public String getGender() { return gender; }
     public void setGender(String gender) { this.gender = gender; }
 
-    public String getContact() { return Contact; }
-    public void setContact(String Contact) { this.Contact = Contact; }
+    public Contact getContact() { return contact; }
+    public void setContact(Contact contact) { this.contact = contact; }
 
     public Policy getPolicy() { return policy; }
     public void setPolicy(Policy policy) { this.policy = policy; }

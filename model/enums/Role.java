@@ -1,4 +1,5 @@
 package model.enums;
+
 public enum Role {
-    RH, M, S, A
+    RH, D, N, A
 }
